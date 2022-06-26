@@ -21,7 +21,7 @@ class SabotageLayer
                 level => Decimal.pow(level+1,8)),
             costDivider: new sabotageUpgrade("Divide the cost of resource multipliers and powerers",
                 level => new Decimal(1e25).pow(Decimal.pow(3.4, level)),
-                level => Decimal.pow(7,level).floor(), {
+                level => Decimal.pow("1.8e308",level).floor(), {
                     getEffectDisplay: effectDisplayTemplates.numberStandard(3,"÷","")
                 }),
             metaTet: new sabotageUpgrade("Tetrate the resource multiplier",
